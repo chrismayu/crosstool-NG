@@ -1,5 +1,5 @@
 # Build script for expat
-CT_EXPAT_TARGET="2.1.0-RENAMED-VULNERABLE-PLEASE-USE-2.3.0-INSTEAD"
+
 do_expat_get() { :; }
 do_expat_extract() { :; }
 do_expat_for_build() { :; }
@@ -8,12 +8,10 @@ do_expat_for_target() { :; }
 
 if [ "${CT_EXPAT_TARGET}" = "y" -o "${CT_EXPAT}" = "y" ]; then
 
- 
 do_expat_get() {
     CT_GetFile "expat-${CT_EXPAT_VERSION}" .tar.gz    \
-               http://downloads.sourceforge.net/project/expat/expat/2.1.0/
+               http://downloads.sourceforge.net/project/expat/expat/${CT_EXPAT_VERSION}
 }
-
 
 do_expat_extract() {
     CT_Extract "expat-${CT_EXPAT_VERSION}"
