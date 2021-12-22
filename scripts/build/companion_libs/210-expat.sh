@@ -14,8 +14,8 @@ do_expat_get() {
 }
 
 do_expat_extract() {
-    CT_Extract "expat-${CT_EXPAT_VERSION}"
-    CT_Patch "expat" "${CT_EXPAT_VERSION}"
+    CT_Extract "expat-2.1.0-RENAMED-VULNERABLE-PLEASE-USE-2.3.0-INSTEAD"
+    CT_Patch "expat-2.1.0-RENAMED-VULNERABLE-PLEASE-USE-2.3.0-INSTEAD"
 }
 
 if [ "${CT_EXPAT}" = "y" ]; then
