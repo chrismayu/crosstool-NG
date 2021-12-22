@@ -1,5 +1,5 @@
 # Build script for expat
-CT_EXPAT_TARGET="2.4.1"
+CT_EXPAT_TARGET="2.4.2"
 do_expat_get() { :; }
 do_expat_extract() { :; }
 do_expat_for_build() { :; }
