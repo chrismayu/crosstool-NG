@@ -9,8 +9,8 @@ do_expat_for_target() { :; }
 if [ "${CT_EXPAT_TARGET}" = "y" -o "${CT_EXPAT}" = "y" ]; then
 
 do_expat_get() {
-    CT_GetFile "expat-${CT_EXPAT_VERSION}" .tar.gz    \
-               https://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0-RENAMED-VULNERABLE-PLEASE-USE-2.3.0-INSTEAD.tar.gz
+    CT_GetFile "expat-2.1.0-RENAMED-VULNERABLE-PLEASE-USE-2.3.0-INSTEAD" .tar.gz    \
+               https://sourceforge.net/projects/expat/files/expat/2.1.0
 }
 
 do_expat_extract() {
